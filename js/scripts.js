@@ -9,15 +9,15 @@ function Pizza(){
 
 Pizza.prototype.findPrice = function(){
   this.price = 10;
-  if (this.meat === "bacon"){
+  if (this.meat === "Bacon"){
     this.price += 1;
   }
-  if (this.extra === "pineapple"){
+  if (this.extra === "Pineapple"){
     this.price += 2;
   }
-  if (this.size === "small"){
+  if (this.size === "Small"){
     this.price -= 2;
-  } else if (this.size === "large"){
+  } else if (this.size === "Large"){
     this.price += 2;
   }
   return this.price;
@@ -37,7 +37,9 @@ $(document).ready(function() {
     pizza.cheese = cheeseChoice;
     pizza.extra = extraChoice;
     pizza.size = sizeChoice;
+    let pizzaPrice = pizza.findPrice();
     $("#pizzaOrder").text(pizza.size + ", " + pizza.meat + ", " + pizza.extra + ", " + pizza.sauce + " Pizza " + pizza.cheese);
+    $("#orderTotal").text(pizzaPrice);
     $("#pizzaSummary").show();
     console.log(pizza.meat);
     console.log(pizza.sauce);
