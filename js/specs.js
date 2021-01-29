@@ -4,10 +4,10 @@ Describe: Pizza.prototype.findPrice
 // Expect(Pizza.prototype.findPrice(pizzaObject).toEqual(10))
 // Test: "it returns a price adjusted by having bacon be a property of a pizza object"
 // Expect(Pizza.prototype.findPrice().toEqual(11))
-Test: "it returns a price adjusted by having Pineapple be a property of a pizza object"
-Expect(Pizza.prototype.findPrice().toEqual(12))
-Test: "it returns a price adjusted by the size property of a pizza objet, 'expect' based on selecting small"
-Expect(Pizza.prototype.findPrice().toEqual(8))
+// Test: "it returns a price adjusted by having Pineapple be a property of a pizza object"
+// Expect(Pizza.prototype.findPrice().toEqual(12))
+// Test: "it returns a price adjusted by the size property of a pizza objet, 'expect' based on selecting small"
+// Expect(Pizza.prototype.findPrice().toEqual(8))
 
 function Pizza(){
   this.meat
@@ -25,7 +25,13 @@ Pizza.prototype.findPrice = function(){
   if (this.meat === "Bacon"){
     this.price += 1;
   }
-  if (this.extra === "Pineapple")
+  if (this.extra === "Pineapple"){
     this.price += 2;
+  }
+  if (this.size === "Small"){
+    this.price -= 2;
+  } else if (this.size === "Large"){
+    this.price += 2;
+  }
   return this.price;
 }
