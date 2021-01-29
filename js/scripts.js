@@ -28,16 +28,19 @@ $(document).ready(function() {
   $("form").submit(function(event){
     event.preventDefault();
     let sauceChoice = $("input:radio[name=sauce]:checked").val(); 
+    let cheeseChoice = $("input:radio[name=cheese]:checked").val(); 
     let meatChoice = $("input:radio[name=meat]:checked").val(); 
     let extraChoice = $("input:radio[name=extra]:checked").val(); 
     let sizeChoice = $("input:radio[name=size]:checked").val(); 
     pizza.meat = meatChoice;
     pizza.sauce = sauceChoice;
+    pizza.cheese = cheeseChoice;
     pizza.extra = extraChoice;
     pizza.size = sizeChoice;
     console.log(pizza.meat);
     console.log(pizza.sauce);
     console.log(pizza.extra);
     console.log(pizza.size);
+    console.log(pizza.cheese);
   });
 });
