@@ -9,7 +9,7 @@
   <title>Pizza</title>
 </head>
 <body>
-  <div class="conainer">
+  <div class="container">
     <form>
       <div class="form-group">
         <div class="sauces">
@@ -28,13 +28,13 @@
       <div class="form-group">
         <div class="cheeses">
           <label>
-            <input type="radio" name="cheese" value="yes" checked>
+            <input type="radio" name="cheese" value="with cheese" checked>
             Yes, cheese.
           </label>
         </div>
         <div class="cheeses">
           <label>
-            <input type="radio" name="cheese" value="no">
+            <input type="radio" name="cheese" value="without cheese">
             No cheese, please.
           </label>
         </div>
@@ -101,6 +101,9 @@
       </div>
       <button type="submit" class="btn btn-danger bt-lg" id="pizzaTime">Pizza Time</button>
     </form>
+    <div id="pizzaSummary">
+      <p>Your <span id="pizzaOrder"></span> order is in. That total will be $<span id="orderTotal"></span>.</p>
+    </div>
   </div>
 </body>
 </html>
