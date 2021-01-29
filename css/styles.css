@@ -1,15 +1,29 @@
+body {
+  background-color: #FAF0E5;
+}
+#top{
+  text-align: center;
+}
 #pizzaSummary{
   display: none;
   margin: 20px;
   text-align: center;
+  background-color: #6C3F46;
+  border-width: 2px;
+  border-color: #A5C33F;
+  border-style: groove;
+}
+#pizzaSummary p{
+  color: #FAF0E5;
 }
 #reset{
   display: none;
 }
 form {
   border-width: 2px;
-  border-color: black;
+  border-color: #7E274A;
   border-style: groove;
   padding: 10px;
   display: none;
+  background-color: #F6C992;
 }
