@@ -2,8 +2,8 @@
 Describe: Pizza.prototype.findPrice
 // Test: "it returns a price based on the property of "this.price" from a Pizza object"
 // Expect(Pizza.prototype.findPrice(pizzaObject).toEqual(10))
-Test: "it returns a price adjusted by having bacon be a property of a pizza object"
-Expect(Pizza.prototype.findPrice().toEqual(11))
+// Test: "it returns a price adjusted by having bacon be a property of a pizza object"
+// Expect(Pizza.prototype.findPrice().toEqual(11))
 Test: "it returns a price adjusted by having Pineapple be a property of a pizza object"
 Expect(Pizza.prototype.findPrice().toEqual(12))
 Test: "it returns a price adjusted by the size property of a pizza objet, 'expect' based on selecting small"
@@ -25,5 +25,7 @@ Pizza.prototype.findPrice = function(){
   if (this.meat === "Bacon"){
     this.price += 1;
   }
-  return pizzaObject.price;
+  if (this.extra === "Pineapple")
+    this.price += 2;
+  return this.price;
 }
