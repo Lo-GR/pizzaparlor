@@ -7,11 +7,6 @@ function Pizza(){
   this.price = 10;
 }
 
-pizza = new Pizza;
-// pizza.meat = "Bacon"
-// pizza.extra = "Pineapple"
-pizza.size = "Small"
-
 Pizza.prototype.findPrice = function(){
   this.price = 10;
   if (this.meat === "Bacon"){
@@ -29,5 +24,11 @@ Pizza.prototype.findPrice = function(){
 }
 
 $(document).ready(function() {
-
+  let pizza = new Pizza;
+  $("form").submit(function(event){
+    event.preventDefault();
+    const meats =$("input:radio[name=meats]:checked").val(); 
+    pizza.meat = meats;
+    console.log(pizza.meat);
+  })
 });
