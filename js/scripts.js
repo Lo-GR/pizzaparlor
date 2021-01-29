@@ -8,8 +8,12 @@ function Pizza(){
 }
 
 pizza = new Pizza;
+pizza.meat = "Bacon"
 
-Pizza.prototype.findPrice = function(pizzaObject){
+Pizza.prototype.findPrice = function(){
+  if (this.meat === "Bacon"){
+    this.price += 1;
+  }
   return this.price;
 }
 
