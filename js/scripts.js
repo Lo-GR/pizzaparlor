@@ -41,6 +41,8 @@ $(document).ready(function() {
     $("#pizzaOrder").text(pizza.size + ", " + pizza.meat + ", " + pizza.extra + ", " + pizza.sauce + " Pizza " + pizza.cheese);
     $("#orderTotal").text(pizzaPrice);
     $("#pizzaSummary").show();
+    $("#pizzaTime").hide();
+    $("#reset").show();
     console.log(pizza.meat);
     console.log(pizza.sauce);
     console.log(pizza.extra);

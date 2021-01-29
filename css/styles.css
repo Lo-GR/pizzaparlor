@@ -1,3 +1,9 @@
 #pizzaSummary{
   display: none;
+  margin: 20px;
+  text-align: center;
+}
+
+#reset{
+  display: none;
 }
