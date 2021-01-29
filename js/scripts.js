@@ -9,15 +9,15 @@ function Pizza(){
 
 Pizza.prototype.findPrice = function(){
   this.price = 10;
-  if (this.meat === "Bacon"){
+  if (this.meat === "bacon"){
     this.price += 1;
   }
-  if (this.extra === "Pineapple"){
+  if (this.extra === "pineapple"){
     this.price += 2;
   }
-  if (this.size === "Small"){
+  if (this.size === "small"){
     this.price -= 2;
-  } else if (this.size === "Large"){
+  } else if (this.size === "large"){
     this.price += 2;
   }
   return this.price;
@@ -27,8 +27,11 @@ $(document).ready(function() {
   let pizza = new Pizza;
   $("form").submit(function(event){
     event.preventDefault();
+    let sauceChoice = $("input:radio[name=sauce]:checked").val(); 
     let meatChoice = $("input:radio[name=meat]:checked").val(); 
     pizza.meat = meatChoice;
+    pizza.sauce = sauceChoice;
     console.log(pizza.meat);
+    console.log(pizza.sauce);
   });
 });
