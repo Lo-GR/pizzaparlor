@@ -19,17 +19,23 @@
         <div class="col-6">
           <form>
             <div class="form-group">
-                <h2>Sauces</h2>
-                <div class="sauces">
-                <label>
-                  <input type="radio" name="sauce" value="White Sauce" checked>
-                  White Sauce
-                </label>
+              <h2>Sauces</h2>
+              <div class="sauces">
+                  <label>
+                    <input type="radio" name="sauce" value="White Sauce" checked>
+                    White Sauce
+                  </label>
               </div>
               <div class="sauces">
                 <label>
                   <input type="radio" name="sauce" value="Marinara">
                   Marinara
+                </label>
+              </div>
+              <div class="sauces">
+                <label class="secretIngredient">
+                  <input type="radio" name="sauce" value="Soy Sauce" checked>
+                  Soy Sauce(Secret Premium)
                 </label>
               </div>
             </div>
@@ -45,6 +51,12 @@
                 <label>
                   <input type="radio" name="cheese" value="without cheese">
                   No cheese, please.
+                </label>
+              </div>
+              <div class="cheeses">
+                <label class="secretIngredient">
+                  <input type="radio" name="cheese" value="with blue-cheese" checked>
+                  Give me blue-cheese. (Secret Premium)
                 </label>
               </div>
             </div>
@@ -95,6 +107,18 @@
                   Green Pepper
                 </label>
               </div>
+              <div class="extras">
+                <label class="secretIngredient">
+                  <input type="radio" name="extra" value="Chocolate" checked>
+                  Chocolate (Secret Premium)
+                </label>
+              </div>
+              <div class="extras">
+                <label class="secretIngredient">
+                  <input type="radio" name="extra" value="Banana" checked>
+                  Banana (Secret Premium)
+                </label>
+              </div>
             </div>
             <div class="form-group">
               <h2>Sizes</h2>
@@ -114,6 +138,12 @@
                 <label>
                   <input type="radio" name="size" value="Small">
                   Small Pizza
+                </label>
+              </div>
+              <div class="sizes">
+                <label class="secretIngredient">
+                  <input type="radio" name="size" value="Hamster" checked>
+                  Hamster Size
                 </label>
               </div>
             </div>
