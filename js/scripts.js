@@ -43,10 +43,10 @@ $(document).ready(function() {
     $("#pizzaSummary").show();
     $("#pizzaTime").hide();
     $("#reset").show();
-    console.log(pizza.meat);
-    console.log(pizza.sauce);
-    console.log(pizza.extra);
-    console.log(pizza.size);
-    console.log(pizza.cheese);
+  });
+  $("#reset").click(function(){
+    $("#reset").hide();
+    $("#pizzaTime").show();
+    $("#pizzaSummary").hide();
   });
 });
