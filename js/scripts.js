@@ -25,6 +25,10 @@ Pizza.prototype.findPrice = function(){
 
 $(document).ready(function() {
   let pizza = new Pizza;
+  $("#startOrder").click(function(){
+    $("#startOrder").hide();
+    $("form").show();
+  });
   $("form").submit(function(event){
     event.preventDefault();
     let sauceChoice = $("input:radio[name=sauce]:checked").val(); 

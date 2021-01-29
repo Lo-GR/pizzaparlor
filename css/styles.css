@@ -11,4 +11,5 @@ form {
   border-color: black;
   border-style: groove;
   padding: 10px;
+  display: none;
 }
