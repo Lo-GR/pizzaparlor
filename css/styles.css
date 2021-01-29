@@ -3,7 +3,12 @@
   margin: 20px;
   text-align: center;
 }
-
 #reset{
   display: none;
+}
+form {
+  border-width: 2px;
+  border-color: black;
+  border-style: groove;
+  padding: 10px;
 }

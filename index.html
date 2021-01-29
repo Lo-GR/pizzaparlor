@@ -10,102 +10,106 @@
 </head>
 <body>
   <div class="container">
-    <form>
-      <div class="form-group">
-        <div class="sauces">
-          <h2>Sauces</h2>
-          <label>
-            <input type="radio" name="sauce" value="White Sauce" checked>
-            White Sauce
-          </label>
-        </div>
-        <div class="sauces">
-          <label>
-            <input type="radio" name="sauce" value="Marinara">
-            Marinara
-          </label>
+    <div class="row">
+      <div class="col-6">
+        <form>
+          <div class="form-group">
+            <div class="sauces">
+              <h2>Sauces</h2>
+              <label>
+                <input type="radio" name="sauce" value="White Sauce" checked>
+                White Sauce
+              </label>
+            </div>
+            <div class="sauces">
+              <label>
+                <input type="radio" name="sauce" value="Marinara">
+                Marinara
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="cheeses">
+              <h2>Cheese</h2>
+              <label>
+                <input type="radio" name="cheese" value="with cheese" checked>
+                Yes, cheese.
+              </label>
+            </div>
+            <div class="cheeses">
+              <label>
+                <input type="radio" name="cheese" value="without cheese">
+                No cheese, please.
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="meats">
+              <h2>Meats</h2>
+              <label>
+                <input type="radio" name="meat" value="Pepperoni" checked>
+                Pepperoni
+              </label>
+            </div>
+            <div class="meats">
+              <label>
+                <input type="radio" name="meat" value="Sausage">
+                Sausage
+              </label>
+            </div>
+            <div class="meats">
+              <label>
+                <input type="radio" name="meat" value="Bacon">
+                Bacon (Premium)
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="extras">
+              <h2>Extras</h2>
+              <label>
+                <input type="radio" name="extra" value="Pineapple" checked>
+                Pineapple (Premium)
+              </label>
+            </div>
+            <div class="extras">
+              <label>
+                <input type="radio" name="extra" value="Mushroom">
+                Mushroom
+              </label>
+            </div>
+            <div class="extras">
+              <label>
+                <input type="radio" name="extra" value="Green Pepper">
+                Green Pepper
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="sizes">
+              <h2>Sizes</h2>
+              <label>
+                <input type="radio" name="size" value="Large" checked>
+                Large Pizza
+              </label>
+            </div>
+            <div class="sizes">
+              <label>
+                <input type="radio" name="size" value="Medium">
+                Medium Pizza
+              </label>
+            </div>
+            <div class="sizes">
+              <label>
+                <input type="radio" name="size" value="Small">
+                Small Pizza
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-danger bt-lg" id="pizzaTime">Pizza Time</button>
+          <button type="button" class="btn btn-success bt-lg" id="reset">New Order</button>
         </div>
       </div>
-      <div class="form-group">
-        <div class="cheeses">
-          <h2>Cheese</h2>
-          <label>
-            <input type="radio" name="cheese" value="with cheese" checked>
-            Yes, cheese.
-          </label>
-        </div>
-        <div class="cheeses">
-          <label>
-            <input type="radio" name="cheese" value="without cheese">
-            No cheese, please.
-          </label>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="meats">
-          <h2>Meats</h2>
-          <label>
-            <input type="radio" name="meat" value="Pepperoni" checked>
-            Pepperoni
-          </label>
-        </div>
-        <div class="meats">
-          <label>
-            <input type="radio" name="meat" value="Sausage">
-            Sausage
-          </label>
-        </div>
-        <div class="meats">
-          <label>
-            <input type="radio" name="meat" value="Bacon">
-            Bacon
-          </label>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="extras">
-          <h2>Extras</h2>
-          <label>
-            <input type="radio" name="extra" value="Pineapple" checked>
-            Pineapple
-          </label>
-        </div>
-        <div class="extras">
-          <label>
-            <input type="radio" name="extra" value="Mushroom">
-            Mushroom
-          </label>
-        </div>
-        <div class="extras">
-          <label>
-            <input type="radio" name="extra" value="Green Pepper">
-            Green Pepper
-          </label>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="sizes">
-          <h2>Sizes</h2>
-          <label>
-            <input type="radio" name="size" value="Large" checked>
-            Large Pizza
-          </label>
-        </div>
-        <div class="sizes">
-          <label>
-            <input type="radio" name="size" value="Medium">
-            Medium Pizza
-          </label>
-        </div>
-        <div class="sizes">
-          <label>
-            <input type="radio" name="size" value="Small">
-            Small Pizza
-          </label>
-        </div>
-      </div>
-      <button type="submit" class="btn btn-danger bt-lg" id="pizzaTime">Pizza Time</button>
-      <button type="button" class="btn btn-success bt-lg" id="reset">New Order</button>
     </form>
     <div class="container">
       <div id="pizzaSummary">
