@@ -1,9 +1,9 @@
 function Pizza(){
-  this.meat
-  this.cheese 
-  this.sauce 
-  this.extra 
-  this.size
+  this.meat;
+  this.cheese; 
+  this.sauce;
+  this.extra;
+  this.size;
   this.price = 10;
 }
 
@@ -27,8 +27,8 @@ $(document).ready(function() {
   let pizza = new Pizza;
   $("form").submit(function(event){
     event.preventDefault();
-    const meats =$("input:radio[name=meats]:checked").val(); 
-    pizza.meat = meats;
+    let meatChoice = $("input:radio[name=meat]:checked").val(); 
+    pizza.meat = meatChoice;
     console.log(pizza.meat);
-  })
+  });
 });
