@@ -1,0 +1,29 @@
+
+Toppings to put on:
+Meats:
+Pepperoni
+Bacon
+Sausage
+
+Cheese
+Yes or no
+
+Sauce:
+White Sauce
+Marinara 
+
+Extras:
+Pineapple
+Mushroom
+Green Peppers
+
+Constructor would likely look likely
+Pizza
+this.meat 
+this.cheese 
+this.sauce 
+this.extra 
+this.price
+
+Prototype function
+Pizza.prototype.findPrice
