@@ -37,6 +37,8 @@ $(document).ready(function() {
     pizza.cheese = cheeseChoice;
     pizza.extra = extraChoice;
     pizza.size = sizeChoice;
+    $("#pizzaOrder").text(pizza.size + ", " + pizza.meat + ", " + pizza.extra + ", " + pizza.sauce + " Pizza " + pizza.cheese);
+    $("#pizzaSummary").show();
     console.log(pizza.meat);
     console.log(pizza.sauce);
     console.log(pizza.extra);
