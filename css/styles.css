@@ -27,6 +27,12 @@ form {
   display: none;
   background-color: #F6C992;
 }
-/* .secretIngredient{
+.secretIngredient{
   display: none;
-} */
+}
+#secretDialogue1{
+  display: none;
+}
+#secretDialogue p {
+  font-size: x-small;
+}

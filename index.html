@@ -13,7 +13,7 @@
     <div id="top">
       <h1>Welcome to Pizza Time!</h1>
       <P>Would you like to order a pizza?</p>
-      <button type="button" class="btn btn-success bt-lg" id="startOrder">Heck, yes.</button>
+      <button type="button" class="btn btn-success btn-lg" id="startOrder">Heck, yes.</button>
     </div>
       <div class="row">
         <div class="col-6">
@@ -34,7 +34,7 @@
               </div>
               <div class="sauces">
                 <label class="secretIngredient">
-                  <input type="radio" name="sauce" value="Soy Sauce" checked>
+                  <input type="radio" name="sauce" value="Soy Sauce">
                   Soy Sauce(Secret Premium)
                 </label>
               </div>
@@ -55,7 +55,7 @@
               </div>
               <div class="cheeses">
                 <label class="secretIngredient">
-                  <input type="radio" name="cheese" value="with blue-cheese" checked>
+                  <input type="radio" name="cheese" value="with blue-cheese">
                   Give me blue-cheese. (Secret Premium)
                 </label>
               </div>
@@ -109,13 +109,13 @@
               </div>
               <div class="extras">
                 <label class="secretIngredient">
-                  <input type="radio" name="extra" value="Chocolate" checked>
+                  <input type="radio" name="extra" value="Chocolate">
                   Chocolate (Secret Premium)
                 </label>
               </div>
               <div class="extras">
                 <label class="secretIngredient">
-                  <input type="radio" name="extra" value="Banana" checked>
+                  <input type="radio" name="extra" value="Banana">
                   Banana (Secret Premium)
                 </label>
               </div>
@@ -142,18 +142,26 @@
               </div>
               <div class="sizes">
                 <label class="secretIngredient">
-                  <input type="radio" name="size" value="Hamster" checked>
+                  <input type="radio" name="size" value="Hamster-Sized">
                   Hamster Size
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn btn-danger bt-lg" id="pizzaTime">Pizza Time</button>
-            <button type="button" class="btn btn-success bt-lg" id="reset">New Order</button>
+            <button type="submit" class="btn btn-danger btn-lg" id="pizzaTime">Pizza Time</button>
+            <button type="button" class="btn btn-success btn-lg" id="reset">New Order</button>
           </form>
         </div>
         <div class="col-6">
           <div id="pizzaSummary">
             <p>Your <span id="pizzaOrder"></span> is being made! That total will be $<span id="orderTotal"></span>.</p>
+          </div>
+          <div id="secretDialogue">
+            <span id="message1"><p>psst... hey</p></span>
+            <span id="message2"><p>There's a secret menu available. The boss says it's only for special customers, but I can let you take a look.</p></span>
+            <span id="message3"><p>Of course it is! Just don't post anything 'bout it on those social medias. What do you say, wanna take a look?</p></span>
+            <button type="button" class="btn btn-info btn-sm" id="response1">Hello?</button>
+            <button type="button" class="btn btn-info btn-sm" id="response2">Is this legal??</button>
+            <button type="button" class="btn btn-info btn-sm" id="response3">Um, I suppose...</button>
           </div>
         </div>
       </div>
