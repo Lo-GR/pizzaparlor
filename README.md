@@ -1,5 +1,5 @@
-# **Pizza Man**
-### This is a web application...
+# **Pizza Time**
+### This is a web application that is a mock up of a pizza parlor site.
 
  ### _Contributor(s) and Contact Info_
 > Logan Roth diamondintheroth@gmail.com - [Github(Lo-GR)](https://github.com/Lo-GR)
@@ -15,7 +15,7 @@
 * **JavaScript**
 
 ## _Description_
-This web application will take ...
+This web application will give the user a list of ingredient options and then tell the user what they ordered and at what cost. The pizza object is hard coded at the start of the page but it is assigned properties based off of a Pizza Constructor. There is a secret menu that is accessible by following the dialogue tree on the order summary page. 
 
 This is a practice project for practicing Constructors and Objects in a class at Epicodus.
 
@@ -30,7 +30,9 @@ This is a practice project for practicing Constructors and Objects in a class at
 * No known bugs at this time. Please contact a contributor to report any bugs found during use.
 
 ## _Future Updates_
-* Add updates here
+* Add an Order Constructor and assign IDs to pizzas made in order to add multiple pizzas.
+* Images and animations
+
 ## _Specs/Tests_
 
 Describe: Pizza.prototype.findPrice()
