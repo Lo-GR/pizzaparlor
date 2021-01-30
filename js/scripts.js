@@ -11,17 +11,24 @@ Pizza.prototype.findPrice = function(){
   this.price = 10;
   if (this.meat === "Bacon"){
     this.price += 1;
+  } else if (this.meat === "Tofurkey"){
+    this.price +=20
   }
   if (this.extra === "Pineapple"){
     this.price += 2;
+  } else if (this.extra === "Chocolate"){
+    this.price += 3;
   }
   if (this.size === "Small"){
     this.price -= 2;
   } else if (this.size === "Large"){
     this.price += 2;
+  } else if (this.size === "Hamster-Sized") {
+    // Price of 1 is intentional, it is hamster sized after all
+    this.price = 1;
   }
   return this.price;
-}
+};
 
 $(document).ready(function() {
   let pizza = new Pizza;
