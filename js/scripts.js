@@ -6,7 +6,6 @@ function Pizza(){
   this.size;
   this.price = 10;
 }
-
 Pizza.prototype.findPrice = function(){
   this.price = 10;
   if (this.meat === "Bacon"){
@@ -29,7 +28,6 @@ Pizza.prototype.findPrice = function(){
   }
   return this.price;
 };
-
 $(document).ready(function() {
   let pizza = new Pizza;
   $("#startOrder").click(function(){
