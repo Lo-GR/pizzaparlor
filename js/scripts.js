@@ -47,10 +47,33 @@ $(document).ready(function() {
     $("#pizzaSummary").show();
     $("#pizzaTime").hide();
     $("#reset").show();
+    $("#secretDialogue").show();
   });
   $("#reset").click(function(){
     $("#reset").hide();
     $("#pizzaTime").show();
     $("#pizzaSummary").hide();
+    $("#secretDialogue").hide();
+  });
+  $("#response1").click(function(){
+    $("#message2").show();
+    $("#message1").hide();
+    $("#response2").show();
+    $("#response1").hide();
+  });
+  $("#response2").click(function(){
+    $("#message3").show();
+    $("#message2").hide();
+    $("#response3").show();
+    $("#response2").hide();
+  });
+  $("#response3").click(function(){
+    $("#message3").hide();
+    $("#response3").hide();
+    $("#reset").hide();
+    $("#pizzaTime").show();
+    $("#pizzaSummary").hide();
+    $("#secretDialogue").hide();
+    $(".secretIngredient").show();
   });
 });
