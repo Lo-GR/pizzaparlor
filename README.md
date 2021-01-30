@@ -21,7 +21,7 @@ This is a practice project for practicing Constructors and Objects in a class at
 
 ## _Setup/Installation_
 
-> Repository: https://github.com/Lo-GR/Mr.RobogerFan.git
+> Repository: https://github.com/Lo-GR/pizzaparlor.git
 1. Clone the above repository from Github
 2. Navigate to the root directory of the project in your terminal and type "open index.html" to view the project in your default browser.
 3. Open the project in your text editor to view the code.
