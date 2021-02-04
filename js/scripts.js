@@ -1,9 +1,9 @@
-function Pizza(){
-  this.meat;
-  this.cheese; 
-  this.sauce;
-  this.extra;
-  this.size;
+function Pizza(meat, cheese, sauce, extra, size){
+  this.meat = meat;
+  this.cheese = cheese;
+  this.sauce = sauce;
+  this.extra = extra;
+  this.size = size;
   this.price = 10;
 }
 Pizza.prototype.findPrice = function(){
@@ -29,7 +29,6 @@ Pizza.prototype.findPrice = function(){
   return this.price;
 };
 $(document).ready(function() {
-  let pizza = new Pizza;
   $("#startOrder").click(function(){
     $("#startOrder").hide();
     $("form").show();
@@ -40,12 +39,8 @@ $(document).ready(function() {
     let cheeseChoice = $("input:radio[name=cheese]:checked").val(); 
     let meatChoice = $("input:radio[name=meat]:checked").val(); 
     let extraChoice = $("input:radio[name=extra]:checked").val(); 
-    let sizeChoice = $("input:radio[name=size]:checked").val(); 
-    pizza.meat = meatChoice;
-    pizza.sauce = sauceChoice;
-    pizza.cheese = cheeseChoice;
-    pizza.extra = extraChoice;
-    pizza.size = sizeChoice;
+    let sizeChoice = $("input:radio[name=size]:checked").val();
+    let pizza = new Pizza(meatChoice, cheeseChoice, sauceChoice, extraChoice, sizeChoice); 
     let pizzaPrice = pizza.findPrice();
     $("#pizzaOrder").text(pizza.size + ", " + pizza.meat + ", " + pizza.extra + ", " + pizza.sauce + " Pizza " + pizza.cheese);
     $("#orderTotal").text(pizzaPrice);
