@@ -39,22 +39,22 @@ Describe: New Pizza(meat, cheese, sauce, extra, size)
 
 Before Each: pizza = New Pizza (bacon, with cheese, marinara, pineapple, small)
 
-Test: "it instantiates an object a property of meat given a meat argument"
+Test: "it instantiates an object with a property of meat given a meat argument"
 >Expect(pizza.meat).toEqual("bacon")
 
-Test: "it instantiates an object a property of meat given a cheese argument"
+Test: "it instantiates an object with a property of cheese given a cheese argument"
 >Expect(pizza.cheese).toEqual("with cheese")
 
-Test: "it instantiates an object a property of meat given a sauce argument"
+Test: "it instantiates an object with a property of sauce given a sauce argument"
 >Expect(pizza.sauce).toEqual("marinara")
 
-Test: "it instantiates an object a property of meat given an extra argument"
+Test: "it instantiates an object with a property of extra given an extra argument"
 >Expect(pizza.extra).toEqual("pineapple")
 
-Test: "it instantiates an object a property of meat given a size argument"
+Test: "it instantiates an object with a property of size given a size argument"
 >Expect(pizza.size).toEqual("small")
 
-Test: "it instantiates an object a property price with a value of 10"
+Test: "it instantiates an object with a property price set to 10"
 >Expect(pizza.price).toEqual(10)
 
 <br/>
